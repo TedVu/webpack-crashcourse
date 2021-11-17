@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Ted-Vu/webpack-crashcourse/issues"
   },
-  "homepage": "https://github.com/Ted-Vu/webpack-crashcourse#readme"
+  "homepage": "https://github.com/Ted-Vu/webpack-crashcourse#readme",
+  "dependencies": {
+    "webpack": "^2.7.0"
+  }
 }
