@@ -1,0 +1,19 @@
+{
+  "name": "webpack-crashcourse",
+  "version": "1.0.0",
+  "description": "This is a project to learn webpack",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ted-Vu/webpack-crashcourse.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ted-Vu/webpack-crashcourse/issues"
+  },
+  "homepage": "https://github.com/Ted-Vu/webpack-crashcourse#readme"
+}
