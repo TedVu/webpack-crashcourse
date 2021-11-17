@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Ted-Vu/webpack-crashcourse#readme",
   "dependencies": {
+    "jquery": "^3.6.0",
     "webpack": "^2.7.0"
   }
 }
