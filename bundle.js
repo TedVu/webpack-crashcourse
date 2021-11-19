@@ -63,35 +63,11 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 2);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports) {
-
-let people = [
-  { name: "John Doe" },
-  { name: "Steve Smith" },
-  { name: "Carol Williams" },
-];
-
-module.exports = people;
-
-
-/***/ }),
-/* 1 */
-/***/ (function(module, exports, __webpack_require__) {
-
-let people = __webpack_require__(0);
-let $ = __webpack_require__(2);
-
-$("body").append("<h1>" + people[0].name + "</h1>");
-console.log(people[0]);
-
-
-/***/ }),
-/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -10976,6 +10952,33 @@ if ( typeof noGlobal === "undefined" ) {
 
 return jQuery;
 } );
+
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports) {
+
+let people = [
+  { name: "John Doe" },
+  { name: "Steve Smith" },
+  { name: "Carol Williams" },
+];
+
+module.exports = people;
+
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+let people = __webpack_require__(1);
+let $ = __webpack_require__(0);
+
+$.each(people, function (key, value) {
+  $("body").append("<h1>" + people[key].name + "</h1>");
+});
+
+console.log(people[0]);
 
 
 /***/ })
