@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 2);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -10958,6 +10958,12 @@ return jQuery;
 /* 1 */
 /***/ (function(module, exports) {
 
+throw new Error("Module build failed: TypeError: this.getOptions is not a function\n    at Object.loader (C:\\Users\\tedvu\\Desktop\\SoftwareProjects\\webpack-crashcourse\\node_modules\\style-loader\\dist\\index.js:19:24)");
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports) {
+
 let people = [
   { name: "John Doe" },
   { name: "Steve Smith" },
@@ -10968,10 +10974,12 @@ module.exports = people;
 
 
 /***/ }),
-/* 2 */
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
-let people = __webpack_require__(1);
+__webpack_require__(1);
+
+let people = __webpack_require__(2);
 let $ = __webpack_require__(0);
 
 $.each(people, function (key, value) {
